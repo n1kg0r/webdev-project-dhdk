@@ -282,21 +282,21 @@
 
               // Add circles:
               
-              svg
-              .selectAll("myCircles")
-              .data(markers)
-              .enter()
-              .append("circle")
-                  .attr("cx", function(d){ return projection([d.long, d.lat])[0] })
-                  .attr("cy", function(d){ return projection([d.long, d.lat])[1] })
-                  .attr("r", 14)
-                  .attr("class", "circle")
-                  .attr("fill", (d) => { return d.fill })
-                  .attr("stroke", (d) => { return d.stroke})
-                  .attr("stroke-width", 3)
-                  .attr("fill-opacity", .2)
-                  .on("mouseover", mouseover)
-                  .on("mousemove", mousemove)
+              // svg
+              // .selectAll("myCircles")
+              // .data(markers)
+              // .enter()
+              // .append("circle")
+              //     .attr("cx", function(d){ return projection([d.long, d.lat])[0] })
+              //     .attr("cy", function(d){ return projection([d.long, d.lat])[1] })
+              //     .attr("r", 14)
+              //     .attr("class", "circle")
+              //     .attr("fill", (d) => { return d.fill })
+              //     .attr("stroke", (d) => { return d.stroke})
+              //     .attr("stroke-width", 3)
+              //     .attr("fill-opacity", .2)
+              //     .on("mouseover", mouseover)
+              //     .on("mousemove", mousemove)
 
                   function equalToEventTarget() {
                       return this == d3.event.target;
