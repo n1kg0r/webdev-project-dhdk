@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>digitalian folktales</title>
-    <link href="styles/bootstrap.css" rel="stylesheet">
-    <script src="scripts/bootstrap.bundle.js"></script>
+    <link id="styling" type="text/css" href="styles/bootstrap.css" rel="stylesheet">
+    <script src="/docs/scripts/bootstrap.bundle.js"></script>
     <script src="https://d3js.org/d3.v6.js"></script>
   </head>
 
   <body class="vh-100 ">
     <nav class="navbar navbar-expand-lg bg-light border-bottom border-body bg-body-tertiary" >
       <div class="ms-2 me-2 container-fluid">
-        <a class="navbar-brand" href="#">digitalian folktales</a>
+        <a class="navbar-brand" href="index.html">digitalian folktales</a>
         
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -23,9 +23,9 @@
                 Folktale 1
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Article 1</a></li>
-                <li><a class="dropdown-item" href="#">Article 2</a></li>
-                <li><a class="dropdown-item" href="#">Article 3</a></li>
+                <li><a class="dropdown-item" href="templates/folktale1-article1.html">Article 1</a></li>
+                <li><a class="dropdown-item" href="templates/folktale1-article2.html">Article 2</a></li>
+                <li><a class="dropdown-item" href="templates/folktale1-article3.html">Article 3</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -33,9 +33,9 @@
                 Folktale 2
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Article 1</a></li>
-                <li><a class="dropdown-item" href="#">Article 2</a></li>
-                <li><a class="dropdown-item" href="#">Article 3</a></li>
+                <li><a class="dropdown-item" href="templates/folktale2-article1.html">Article 1</a></li>
+                <li><a class="dropdown-item" href="templates/folktale2-article2.html">Article 2</a></li>
+                <li><a class="dropdown-item" href="templates/folktale2-article3.html">Article 3</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -43,9 +43,9 @@
                 Folktale 3
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Article 1</a></li>
-                <li><a class="dropdown-item" href="#">Article 2</a></li>
-                <li><a class="dropdown-item" href="#">Article 3</a></li>
+                <li><a class="dropdown-item" href="templates/folktale3-article1.html">Article 1</a></li>
+                <li><a class="dropdown-item" href="templates/folktale3-article2.html">Article 2</a></li>
+                <li><a class="dropdown-item" href="templates/folktale3-article3.html">Article 3</a></li>
               </ul>
             </li>
           </ul>
@@ -61,15 +61,15 @@
               Styling
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bootstrap</a></li>
-              <li><a class="dropdown-item" href="#">Alice - 1</a></li>
-              <li><a class="dropdown-item" href="#">Alice - 2</a></li>
-              <li><a class="dropdown-item" href="#">Francesco - 1</a></li>
-              <li><a class="dropdown-item" href="#">Francesco - 2</a></li>
-              <li><a class="dropdown-item" href="#">Kolya - 1</a></li>
-              <li><a class="dropdown-item" href="#">Kolya - 2</a></li>
-              <li><a class="dropdown-item" href="#">Liliana - 1</a></li>
-              <li><a class="dropdown-item" href="#">Liliana - 2</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('bootstrap.css');return false;">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('alice-style-1.css');return false;">Alice - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('alice-style-2.css');return false;">Alice - 2</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('francesco-style-1.css');return false;">Francesco - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('francesco-style-2.css');return false;">Francesco - 2</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('kolya-style-1.css');return false;">Kolya - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('kolya-style-2.css');return false;">Kolya - 2</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('liliana-style-1.css');return false;">Liliana - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('liliana-style-2.css');return false;">Liliana - 2</a></li>
             </ul>
           </div>
         </div>
@@ -333,5 +333,16 @@
       // })
 
   </script>
+  <script> 
+    function switchToStyling(styleName) { 
+        // Obtains an array of all <link> 
+        // elements. 
+        // Select your element using indexing. 
+        var theme = document.getElementsByTagName('link')[0]; 
 
+        // Change the value of href attribute  
+        // to change the css sheet. 
+        theme.setAttribute('href', 'styles/'+styleName); 
+    } 
+  </script> 
 </html>

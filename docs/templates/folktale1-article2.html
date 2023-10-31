@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>digitalian folktales</title>
+    <link id="styling" type="text/css" href="/docs/styles/bootstrap.css" rel="stylesheet">
+    <script src="/docs/scripts/bootstrap.bundle.js"></script>
+    <script src="https://d3js.org/d3.v6.js"></script>
+  </head>
+
+  <body class="vh-100 ">
+    <nav class="navbar navbar-expand-lg bg-light border-bottom border-body bg-body-tertiary" >
+      <div class="ms-2 me-2 container-fluid">
+        <a class="navbar-brand" href="/docs/index.html">digitalian folktales</a>
+        
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Folktale 1
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/docs/templates/folktale1-article1.html">Article 1</a></li>
+                <li><a class="dropdown-item" href="/docs/templates/folktale1-article2.html">Article 2</a></li>
+                <li><a class="dropdown-item" href="/docs/templates/folktale1-article3.html">Article 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Folktale 2
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/docs/templates/folktale2-article1.html">Article 1</a></li>
+                <li><a class="dropdown-item" href="/docs/templates/folktale2-article2.html">Article 2</a></li>
+                <li><a class="dropdown-item" href="/docs/templates/folktale2-article3.html">Article 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Folktale 3
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/docs/templates/folktale3-article1.html">Article 1</a></li>
+                <li><a class="dropdown-item" href="/docs/templates/folktale3-article2.html">Article 2</a></li>
+                <li><a class="dropdown-item" href="/docs/templates/folktale3-article3.html">Article 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+
+        <div class="d-flex flex-row-reverse align-items-center justify-content-start gap-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="dropstart">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Styling
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('bootstrap.css');return false;">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('alice-style-1.css');return false;">Alice - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('alice-style-2.css');return false;">Alice - 2</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('francesco-style-1.css');return false;">Francesco - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('francesco-style-2.css');return false;">Francesco - 2</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('kolya-style-1.css');return false;">Kolya - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('kolya-style-2.css');return false;">Kolya - 2</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('liliana-style-1.css');return false;">Liliana - 1</a></li>
+              <li><a class="dropdown-item" href="#" onclick="switchToStyling('liliana-style-2.css');return false;">Liliana - 2</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    
+    
+    <main>
+    </main>
+
+    <footer>
+    </footer>
+    
+  </body>
+
+  <script> 
+    function switchToStyling(styleName) { 
+        // Obtains an array of all <link> 
+        // elements. 
+        // Select your element using indexing. 
+        var theme = document.getElementsByTagName('link')[0]; 
+
+        // Change the value of href attribute  
+        // to change the css sheet. 
+        theme.setAttribute('href', '/docs/styles/'+styleName); 
+    } 
+  </script> 
+</html>
