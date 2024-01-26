@@ -1,0 +1,190 @@
+nav {
+    display: flex;
+    width: 100vw;
+    height: 12vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgb(205, 204, 204);
+    color: #000000;
+    padding: 0;
+}
+
+
+/*MMMM logo */
+
+
+.M1 {
+    position: absolute;
+    top: 2vh; /* Adjust as needed */
+  left: 1.5vw; /* Adjust as needed */
+  font-family: "amador", sans-serif !important;
+font-weight: 400;
+font-size: 30px;
+font-style: normal;
+}
+
+
+.M2 {
+    position: absolute;
+    top: 1.7vh; /* Adjust as needed */
+  left: 3.7vw; /* Adjust as needed */
+  font-family: "opake", sans-serif;
+font-weight: 300;
+font-size: 28px;
+font-style: normal;
+
+
+}
+
+.M3 {
+    position: absolute;
+    top: 2vh; /* Adjust as needed */
+  left: 6.1vw; /* Adjust as needed */
+  font-family: "p22-frenzy", sans-serif;
+font-weight: 600;
+font-size: 30px;
+font-style: normal;
+}
+
+.M4 {
+    position: absolute;
+    top: 2.9vh; /* Adjust as needed */
+  left: 8.5vw; /* Adjust as needed */
+  font-family: "pf-uniform", sans-serif;
+font-weight: 600;
+font-size: 30px;
+font-style: normal;
+}
+
+.subtitle {
+    position: absolute;
+    top: 8vh; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+letter-spacing: -0.6px;
+word-spacing: -0.4px;
+color: #000000;
+font-weight: 700;
+}
+
+/* navbar buttons */
+
+.about {
+    position: absolute;
+    top: 8vh; /* Adjust as needed */
+  left: 800px; /* Adjust as needed */
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+letter-spacing: -0.6px;
+word-spacing: -0.4px;
+color: #000000;
+font-weight: 700;
+}
+
+.past {
+    position: absolute;
+    top: 8vh; /* Adjust as needed */
+    left: 900px; /* Adjust as needed */
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+letter-spacing: -0.6px;
+word-spacing: -0.4px;
+color: #000000;
+font-weight: 700;
+}
+
+.present {
+    position: absolute;
+    top: 8vh; /* Adjust as needed */
+    left: 1000px; /* Adjust as needed */
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+letter-spacing: -0.6px;
+word-spacing: -0.4px;
+color: #000000;
+font-weight: 700;
+}
+
+.future {
+    position: absolute;
+    top: 8vh; /* Adjust as needed */
+    left: 1100px; /* Adjust as needed */
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+letter-spacing: -0.6px;
+word-spacing: -0.4px;
+color: #000000;
+font-weight: 700;
+}
+
+
+/*link behaviour
+
+/* Unvisited Link */
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Visited Link */
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Hovered Link */
+  a:hover {
+    color: rgb(255, 0, 140);
+    text-decoration: none; /* Underline on hover */
+  }
+  
+  /* Active Link (while being clicked) */
+  a:active {
+    color: rgb(255, 0, 140);
+    text-decoration: underline;
+  }
+
+
+.container {
+    position: absolute;
+    margin: 0;
+    height: 60vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*text */
+
+.title {
+  user-select: none;
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 140px;
+letter-spacing: -0.6px;
+word-spacing: -0.4px;
+line-height: 1;
+color: #000000;
+font-weight: 1000;
+
+}
+
+/*subtitle n2*/
+
+
+.undertitle {
+  user-select: none;
+    position: absolute;
+    top: 90vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+color: #000000;
+font-weight: 600;
+
+}
